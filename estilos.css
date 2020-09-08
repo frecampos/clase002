@@ -1,0 +1,54 @@
+@import url(estilo_hijo.css);
+
+/* valores iniciales de la pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* calcular automaticamente el ancho de las cajas
+     y evita que ante padding se coloque una bajo otra */
+}
+
+.contenedor {
+    width: 80%;
+    height: 500px;
+    background: brown;
+    margin: 5px auto;
+    display: flex;
+    /*  indica que se trabajara bajon la estructura de cajas flexibles (Flexbox) 
+    una caracteristica de flex, es que sin importar la cantidad de elementos (hijos)
+    estos comparten el mismo tamaño (sin importar el ancho de ellos)
+    */
+    flex-direction: row;
+    /* row = se alinean las cajas de izq. a derecha */
+    /* row-reverse = alinea las cajas desde el costado derecho al izq.*/
+    /* column = alinea las cajas en columnas */
+    /* column-reverse = aliena las cajas de abajo hacia arriba*/
+    flex-wrap: wrap;
+    /* respetara o no los tamaños de los componentes hijos */
+    /* wrap = respetar tamaños de <DIV> */
+    /* nowrap = no respetar el tamaño y dejar que "display:flex" ajuste los <DIV> */
+    justify-content: flex-start;
+    /* justifica los elementos hijo en el interior de contenedor*/
+    /* center = los deja al centro */
+    /* flex-start = alinear desde izq. a derecha */
+    /* flex-end = alinear desde derecha a izq.*/
+    /* space-between = genera un espacio entre elementos */
+    /* space-around = genera espacios proporcionales (incluido margenes)*/
+    align-items: flex-start;
+    /* determina el posicionamiento de los elementos segun contenido */
+    /* baseline = alinea el contenido */
+    /* flex-end = posiciona los elementos al final del contenedor*/
+    /* flex-start = posiciona los elementos al inicio del contenedor*/
+    /* center = posiciona los elementos justo al centro (entre el alto)*/
+    /* stretch = deja el 100% de alto para el objeto (este no debe tener alto)*/
+    /*    align-content: space-around;*/
+    /* ocupamos el align-content cuando tenemos un listado de varios elementos internos
+    para organizar */
+    /* center = organizar al centro */
+    /* flex-start = organiza arriba del contenedor */
+    /* flex-end = organiza abajo del contenedor */
+    /* space-between = organiza elementos dejando espacios en medio */
+    /* space-around = respeta los padding dejando los elementos de forma pareja*/
+}

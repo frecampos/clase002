@@ -1,0 +1,24 @@
+.hijos {
+    background: darkblue;
+    width: 250px;
+    height: 100px;
+    color: cornsilk;
+    margin: 30px;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    /*flex-grow: 1;*/
+    /* flex-grow:1 permite que los hjos ocupen el ancho pleno del contenedor*/
+    flex-shrink: 0;
+    /* define si se respetara el tamaño minimo del objeto hijo 
+    (width: 150px;) */
+    order: 2;
+    flex-grow: 1;
+    /* permite expandir las cajas por cada una de sus filas*/
+}
+
+.clase2 {
+    font-size: 30px;
+    color: darkgreen;
+    order: 1;
+}
