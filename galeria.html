@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <style>
+        .contenedor {
+            margin: 15px;
+        }
+        
+        .contenedor img {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .contenedor img:hover {
+            border: solid 3px rgb(255, 0, 0);
+        }
+    </style>
+    <div class="contenedor">
+        <a href="img/gatito1.jpg" data-lightbox="gatos" data-title="Gato Tierno">
+            <img src="img/gatito1.jpg" alt="">
+        </a>
+        <a href="img/gatito2.jpg" data-lightbox="gatos" data-title="gato super tierno">
+            <img src="img/gatito2.jpg" alt="">
+        </a>
+        <a href="img/gatito3.jpg" data-lightbox="gatos" data-title="no podre salir en cuarentena">
+            <img src="img/gatito3.jpg" alt="">
+        </a>
+
+        <a href="img/perro1.jpg" data-lightbox="perros" data-title="perro chico">
+            <img src="img/perro1.jpg" alt="">
+        </a>
+        <a href="img/perro2.jpg" data-lightbox="perros" data-title="super KILTRO">
+            <img src="img/perro2.jpg" alt="">
+        </a>
+        <a href="img/perro3.jpg" data-lightbox="perros" data-title="Pero tierno">
+            <img src="img/perro3.jpg" alt="">
+        </a>
+
+    </div>
+
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
