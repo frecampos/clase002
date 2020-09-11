@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilo_form.css">
 </head>
 
 <body>
-    <h1>formulario</h1>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="post" class="formulario_registro">
+        <h2 class="formulario-titulo">Creacion de Cuenta</h2>
+        <div class="formulario-input">
+            <input class="col-50" type="text" name="txtRut" placeholder="ingrese rut">
+            <input class="col-50" type="text" name="txtNombre" placeholder="ingrese nombre">
+            <input class="col-50" type="text" name="txtApellido" placeholder="ingrese apellido">
+            <input class="col-100" type="email" name="txtCorreo" placeholder="ingrese correo">
+            <input class="col-50" type="date" name="txtFecha" placeholder="fecha de nacimiento">
+            <input class="col-75" type="password" name="txtPass" placeholder="password">
+
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </div>
+    </form>
 </body>
 
 </html>
